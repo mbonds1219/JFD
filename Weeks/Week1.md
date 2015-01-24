@@ -13,7 +13,7 @@
 ### Project
 
 ```
-Complete Khan Academy exercises. If time permits.
+Complete Khan Academy exercises, if time permits.
 
 Code Kata.
 - fizz buzz
