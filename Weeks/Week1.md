@@ -45,6 +45,6 @@ for ( var i = 1; i <= 100; i++) {
 
 Really Short Example
 for ( var i = 1; i <= 100; i++) {
-  console.log(i % 3 ? (i % 5 ? 'fizzbuzz' : 'fizz') : (i % 5 ? 'buzz' : i));
+  console.log((i % 3 === 0? (i % 5 === 0 ? 'fizzbuzz' : 'fizz') : (i % 5 === 0 ? 'buzz' : i)));
 }
 ```
