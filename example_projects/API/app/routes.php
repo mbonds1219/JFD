@@ -15,6 +15,10 @@ Route::group(['before' => 'auth'], function () {
     {
         return View::make('home');
     });
+
+    Route::get('home', function () {
+        return View::make('home');
+    });
 });
 
 Route::get('register', function () {
@@ -24,7 +28,7 @@ Route::get('register', function () {
 Route::get('login', function () {
     return View::make('login');
 });
-
+ // jfd.michaelbonds.me
 Route::group(['prefix' => 'api'], function () {
     Route::resource(
         'session',
@@ -46,13 +50,13 @@ Route::group(['prefix' => 'api'], function () {
             ['only' => ['index', 'store', 'show', 'update']]
         );
 
-        Route::resource(
+        Route::resource( // "/api/project/:project_id/solution/:solution_id"
             'project.solution',
             'App\Controllers\SolutionsController'
         );
 
         Route::resource(
-            'project',
+            'project', // "/api/project/:project_id"
             'App\Controllers\ProjectController'
         );
 

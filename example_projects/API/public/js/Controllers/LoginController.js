@@ -10,7 +10,7 @@ jfd.controller('LoginController', ['$scope', '$timeout', '$window', 'Session', '
             LxNotificationService.success('Logged In!');
             LxProgressService.circular.show('#5fa2db', '#progress');
             return $timeout(function () {
-                $window.location = '/home';
+                $window.location = '/';
             }, 2000);
         }, function (err) {
             LxNotificationService.error(err.data);
