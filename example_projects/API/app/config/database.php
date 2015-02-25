@@ -48,7 +48,7 @@ return array(
         'mysql' => array(
             'driver'    => 'mysql',
             'host'      => 'localhost',
-            'database'  => 'javascript_for_designerssud',
+            'database'  => 'javascript_for_designers',
             'username'  => $_ENV['MYSQL_USERNAME'],
             'password'  => $_ENV['MYSQL_PASSWORD'],
             'charset'   => 'utf8',
